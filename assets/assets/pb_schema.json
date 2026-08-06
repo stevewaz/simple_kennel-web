@@ -93,8 +93,8 @@
     "indexes": [
       "CREATE INDEX `idx_mfas_collectionRef_recordRef` ON `_mfas` (collectionRef,recordRef)"
     ],
-    "created": "2026-08-04 01:24:50.802Z",
-    "updated": "2026-08-04 01:24:50.802Z",
+    "created": "2026-08-05 02:23:05.449Z",
+    "updated": "2026-08-05 02:23:05.449Z",
     "system": true
   },
   {
@@ -205,8 +205,8 @@
     "indexes": [
       "CREATE INDEX `idx_otps_collectionRef_recordRef` ON `_otps` (collectionRef, recordRef)"
     ],
-    "created": "2026-08-04 01:24:50.807Z",
-    "updated": "2026-08-04 01:24:50.807Z",
+    "created": "2026-08-05 02:23:05.473Z",
+    "updated": "2026-08-05 02:23:05.473Z",
     "system": true
   },
   {
@@ -319,8 +319,8 @@
       "CREATE UNIQUE INDEX `idx_externalAuths_record_provider` ON `_externalAuths` (collectionRef, recordRef, provider)",
       "CREATE UNIQUE INDEX `idx_externalAuths_collection_provider` ON `_externalAuths` (collectionRef, provider, providerId)"
     ],
-    "created": "2026-08-04 01:24:50.810Z",
-    "updated": "2026-08-04 01:24:50.810Z",
+    "created": "2026-08-05 02:23:05.484Z",
+    "updated": "2026-08-05 02:23:05.484Z",
     "system": true
   },
   {
@@ -417,8 +417,8 @@
     "indexes": [
       "CREATE UNIQUE INDEX `idx_authOrigins_unique_pairs` ON `_authOrigins` (collectionRef, recordRef, fingerprint)"
     ],
-    "created": "2026-08-04 01:24:50.813Z",
-    "updated": "2026-08-04 01:24:50.813Z",
+    "created": "2026-08-05 02:23:05.493Z",
+    "updated": "2026-08-05 02:23:05.493Z",
     "system": true
   },
   {
@@ -532,8 +532,8 @@
       "CREATE UNIQUE INDEX `idx_tokenKey_pbc_3142635823` ON `_superusers` (`tokenKey`)",
       "CREATE UNIQUE INDEX `idx_email_pbc_3142635823` ON `_superusers` (`email`) WHERE `email` != ''"
     ],
-    "created": "2026-08-04 01:24:50.816Z",
-    "updated": "2026-08-04 01:24:50.816Z",
+    "created": "2026-08-05 02:23:05.510Z",
+    "updated": "2026-08-05 02:23:05.510Z",
     "system": true,
     "authRule": "",
     "manageRule": null,
@@ -604,11 +604,11 @@
   },
   {
     "id": "_pb_users_auth_",
-    "listRule": "id = @request.auth.id",
-    "viewRule": "id = @request.auth.id",
+    "listRule": "id = @request.auth.id || tenant = @request.auth.tenant",
+    "viewRule": "id = @request.auth.id || tenant = @request.auth.tenant",
     "createRule": "",
     "updateRule": "id = @request.auth.id",
-    "deleteRule": "id = @request.auth.id",
+    "deleteRule": "tenant = @request.auth.tenant",
     "name": "users",
     "type": "auth",
     "fields": [
@@ -763,8 +763,8 @@
       "CREATE UNIQUE INDEX `idx_tokenKey__pb_users_auth_` ON `users` (`tokenKey`)",
       "CREATE UNIQUE INDEX `idx_email__pb_users_auth_` ON `users` (`email`) WHERE `email` != ''"
     ],
-    "created": "2026-08-04 01:24:50.821Z",
-    "updated": "2026-08-04 01:50:56.049Z",
+    "created": "2026-08-05 02:23:05.530Z",
+    "updated": "2026-08-06 00:31:31.041Z",
     "system": false,
     "authRule": "",
     "manageRule": null,
@@ -979,8 +979,8 @@
       }
     ],
     "indexes": [],
-    "created": "2026-08-04 01:50:53.022Z",
-    "updated": "2026-08-04 01:50:53.022Z",
+    "created": "2026-08-06 00:31:30.128Z",
+    "updated": "2026-08-06 00:31:30.128Z",
     "system": false
   },
   {
@@ -1092,8 +1092,8 @@
       }
     ],
     "indexes": [],
-    "created": "2026-08-04 01:50:53.377Z",
-    "updated": "2026-08-04 01:50:53.377Z",
+    "created": "2026-08-06 00:31:30.255Z",
+    "updated": "2026-08-06 00:31:30.255Z",
     "system": false
   },
   {
@@ -1254,8 +1254,8 @@
       }
     ],
     "indexes": [],
-    "created": "2026-08-04 01:50:53.732Z",
-    "updated": "2026-08-04 01:50:53.732Z",
+    "created": "2026-08-06 00:31:30.331Z",
+    "updated": "2026-08-06 00:31:30.331Z",
     "system": false
   },
   {
@@ -1453,8 +1453,8 @@
       }
     ],
     "indexes": [],
-    "created": "2026-08-04 01:50:54.097Z",
-    "updated": "2026-08-04 01:50:54.097Z",
+    "created": "2026-08-06 00:31:30.407Z",
+    "updated": "2026-08-06 00:31:30.407Z",
     "system": false
   },
   {
@@ -1694,8 +1694,8 @@
       }
     ],
     "indexes": [],
-    "created": "2026-08-04 01:50:54.464Z",
-    "updated": "2026-08-04 01:50:54.464Z",
+    "created": "2026-08-06 00:31:30.474Z",
+    "updated": "2026-08-06 00:31:30.474Z",
     "system": false
   },
   {
@@ -1794,8 +1794,8 @@
       }
     ],
     "indexes": [],
-    "created": "2026-08-04 01:50:54.674Z",
-    "updated": "2026-08-04 01:50:54.674Z",
+    "created": "2026-08-06 00:31:30.576Z",
+    "updated": "2026-08-06 00:31:30.576Z",
     "system": false
   },
   {
@@ -1949,14 +1949,14 @@
       }
     ],
     "indexes": [],
-    "created": "2026-08-04 01:50:55.054Z",
-    "updated": "2026-08-04 01:50:55.054Z",
+    "created": "2026-08-06 00:31:30.668Z",
+    "updated": "2026-08-06 00:31:30.668Z",
     "system": false
   },
   {
     "id": "pbc_3069984939",
-    "listRule": "@request.auth.id != \"\"",
-    "viewRule": "@request.auth.id != \"\"",
+    "listRule": "",
+    "viewRule": "",
     "createRule": "@request.auth.id != \"\" && @request.body.tenant = @request.auth.tenant",
     "updateRule": "@request.auth.id != \"\"",
     "deleteRule": "tenant = @request.auth.tenant",
@@ -2046,8 +2046,8 @@
       }
     ],
     "indexes": [],
-    "created": "2026-08-04 01:50:55.259Z",
-    "updated": "2026-08-04 01:50:55.259Z",
+    "created": "2026-08-06 00:31:30.741Z",
+    "updated": "2026-08-06 00:31:30.741Z",
     "system": false
   }
 ]

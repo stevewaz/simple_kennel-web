@@ -976,11 +976,31 @@
         "required": false,
         "system": false,
         "type": "text"
+      },
+      {
+        "hidden": false,
+        "id": "autodate2990389176",
+        "name": "created",
+        "onCreate": true,
+        "onUpdate": false,
+        "presentable": false,
+        "system": false,
+        "type": "autodate"
+      },
+      {
+        "hidden": false,
+        "id": "autodate3332085495",
+        "name": "updated",
+        "onCreate": true,
+        "onUpdate": true,
+        "presentable": false,
+        "system": false,
+        "type": "autodate"
       }
     ],
     "indexes": [],
     "created": "2026-08-06 00:31:30.128Z",
-    "updated": "2026-08-06 00:31:30.128Z",
+    "updated": "2026-08-07 00:53:43.236Z",
     "system": false
   },
   {
@@ -1089,11 +1109,31 @@
         "required": false,
         "system": false,
         "type": "bool"
+      },
+      {
+        "hidden": false,
+        "id": "autodate2990389176",
+        "name": "created",
+        "onCreate": true,
+        "onUpdate": false,
+        "presentable": false,
+        "system": false,
+        "type": "autodate"
+      },
+      {
+        "hidden": false,
+        "id": "autodate3332085495",
+        "name": "updated",
+        "onCreate": true,
+        "onUpdate": true,
+        "presentable": false,
+        "system": false,
+        "type": "autodate"
       }
     ],
     "indexes": [],
     "created": "2026-08-06 00:31:30.255Z",
-    "updated": "2026-08-06 00:31:30.255Z",
+    "updated": "2026-08-07 00:53:44.020Z",
     "system": false
   },
   {
@@ -1251,11 +1291,31 @@
         "required": false,
         "system": false,
         "type": "text"
+      },
+      {
+        "hidden": false,
+        "id": "autodate2990389176",
+        "name": "created",
+        "onCreate": true,
+        "onUpdate": false,
+        "presentable": false,
+        "system": false,
+        "type": "autodate"
+      },
+      {
+        "hidden": false,
+        "id": "autodate3332085495",
+        "name": "updated",
+        "onCreate": true,
+        "onUpdate": true,
+        "presentable": false,
+        "system": false,
+        "type": "autodate"
       }
     ],
     "indexes": [],
     "created": "2026-08-06 00:31:30.331Z",
-    "updated": "2026-08-06 00:31:30.331Z",
+    "updated": "2026-08-07 00:53:44.818Z",
     "system": false
   },
   {
@@ -1450,11 +1510,31 @@
           "AM",
           "PM"
         ]
+      },
+      {
+        "hidden": false,
+        "id": "autodate2990389176",
+        "name": "created",
+        "onCreate": true,
+        "onUpdate": false,
+        "presentable": false,
+        "system": false,
+        "type": "autodate"
+      },
+      {
+        "hidden": false,
+        "id": "autodate3332085495",
+        "name": "updated",
+        "onCreate": true,
+        "onUpdate": true,
+        "presentable": false,
+        "system": false,
+        "type": "autodate"
       }
     ],
     "indexes": [],
     "created": "2026-08-06 00:31:30.407Z",
-    "updated": "2026-08-06 00:31:30.407Z",
+    "updated": "2026-08-07 00:53:45.398Z",
     "system": false
   },
   {
@@ -1691,11 +1771,31 @@
           "Credit Card",
           "Other"
         ]
+      },
+      {
+        "hidden": false,
+        "id": "autodate2990389176",
+        "name": "created",
+        "onCreate": true,
+        "onUpdate": false,
+        "presentable": false,
+        "system": false,
+        "type": "autodate"
+      },
+      {
+        "hidden": false,
+        "id": "autodate3332085495",
+        "name": "updated",
+        "onCreate": true,
+        "onUpdate": true,
+        "presentable": false,
+        "system": false,
+        "type": "autodate"
       }
     ],
     "indexes": [],
     "created": "2026-08-06 00:31:30.474Z",
-    "updated": "2026-08-06 00:31:30.474Z",
+    "updated": "2026-08-07 00:53:46.075Z",
     "system": false
   },
   {
@@ -1791,11 +1891,31 @@
         "required": false,
         "system": false,
         "type": "number"
+      },
+      {
+        "hidden": false,
+        "id": "autodate2990389176",
+        "name": "created",
+        "onCreate": true,
+        "onUpdate": false,
+        "presentable": false,
+        "system": false,
+        "type": "autodate"
+      },
+      {
+        "hidden": false,
+        "id": "autodate3332085495",
+        "name": "updated",
+        "onCreate": true,
+        "onUpdate": true,
+        "presentable": false,
+        "system": false,
+        "type": "autodate"
       }
     ],
     "indexes": [],
     "created": "2026-08-06 00:31:30.576Z",
-    "updated": "2026-08-06 00:31:30.576Z",
+    "updated": "2026-08-07 00:53:46.733Z",
     "system": false
   },
   {
@@ -1946,11 +2066,31 @@
         "required": false,
         "system": false,
         "type": "json"
+      },
+      {
+        "hidden": false,
+        "id": "autodate2990389176",
+        "name": "created",
+        "onCreate": true,
+        "onUpdate": false,
+        "presentable": false,
+        "system": false,
+        "type": "autodate"
+      },
+      {
+        "hidden": false,
+        "id": "autodate3332085495",
+        "name": "updated",
+        "onCreate": true,
+        "onUpdate": true,
+        "presentable": false,
+        "system": false,
+        "type": "autodate"
       }
     ],
     "indexes": [],
     "created": "2026-08-06 00:31:30.668Z",
-    "updated": "2026-08-06 00:31:30.668Z",
+    "updated": "2026-08-07 00:53:47.397Z",
     "system": false
   },
   {
@@ -2043,11 +2183,31 @@
         "required": false,
         "system": false,
         "type": "date"
+      },
+      {
+        "hidden": false,
+        "id": "autodate2990389176",
+        "name": "created",
+        "onCreate": true,
+        "onUpdate": false,
+        "presentable": false,
+        "system": false,
+        "type": "autodate"
+      },
+      {
+        "hidden": false,
+        "id": "autodate3332085495",
+        "name": "updated",
+        "onCreate": true,
+        "onUpdate": true,
+        "presentable": false,
+        "system": false,
+        "type": "autodate"
       }
     ],
     "indexes": [],
     "created": "2026-08-06 00:31:30.741Z",
-    "updated": "2026-08-06 00:31:30.741Z",
+    "updated": "2026-08-07 00:53:48.095Z",
     "system": false
   }
 ]

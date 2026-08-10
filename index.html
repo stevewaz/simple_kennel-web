@@ -100,6 +100,20 @@
       document.body.style.background = "transparent";
     }
   </script>
+  <script>
+    // Mobile browsers with dynamic/dockable toolbars (e.g. Chrome/Gemini on
+    // Android) can resize the visual viewport — revealing or hiding extra
+    // page height — without firing a `window` resize event Flutter's
+    // engine listens to. That leaves the canvas sized against a stale
+    // height, showing as dead space at the bottom. Forwarding
+    // visualViewport's own resize event as a window resize nudges Flutter
+    // to recompute its layout against the current height.
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener('resize', () => {
+        window.dispatchEvent(new Event('resize'));
+      });
+    }
+  </script>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, interactive-widget=resizes-content" name="viewport">
 </head>
 <body>

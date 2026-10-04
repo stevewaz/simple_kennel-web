@@ -41,6 +41,23 @@
     For more details:
     * https://docs.flutter.dev/platform-integration/web/initialization
   -->
+  <script>
+    // The kennel's data lives in this browser (Isar). Ask the browser not to evict it when
+    // storage runs low or the site hasn't been opened for a while. Chrome/Edge decide
+    // silently; Safari honours it mainly for installed (Add to Home Screen) web apps.
+    if (navigator.storage && navigator.storage.persist) {
+      navigator.storage.persist().catch(function () {});
+    }
+  </script>
+  <script>
+    // Offline app shell (see kennel_sw.js). Registered relative to this page so it works
+    // under the GitHub Pages sub-path as well as at a site root.
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('kennel_sw.js').catch(function () {});
+      });
+    }
+  </script>
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
